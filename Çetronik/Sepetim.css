@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+body {
+    font-family: Arial, sans-serif;
+	font-style: oblique;
+	
+}
+
+.navbar-brand {
+    font-size: 2em;
+    font-weight: bold;
+    color: #cc0000;
+}
+
+.form-control {
+    width: 300px;
+}
+
+.container {
+    margin-top: 60px;
+	background-color:aliceblue;
+}
+
+.total {
+    font-size: 20px;
+    margin: 20px 0;
+}
+.footer {
+    background-color: #343a40; /* Gri arkaplan */
+    color: white;
+	margin-top: 483px;
+	
+}
+
+
+.footer h5 {
+    color: #fff;
+}
+
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+

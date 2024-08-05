@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Paneli</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="üye ol.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="anasayfa.html">Çetronik</a>
+        <div class="navbar-nav ml-auto">
+			<a class="nav-item nav-link" href="Ürünler.php">Ürünler</a>
+            <a class="nav-item nav-link active" href="#">Admin Paneli</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h2>Ürün Yönetimi</h2>
+      
+        <form action="Admin.php" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="action" value="add">
+            <div class="form-group">
+                <label for="Name">Ürün Adı:</label>
+                <input type="text" class="form-control" id="productName" name="productName" required>
+            </div>
+            <div class="form-group">
+                <label for="productDescription">Ürün Açıklaması:</label>
+                <textarea class="form-control" id="productDescription" name="productDescription" required></textarea>
+            </div>
+			<div class="form-group">
+				<label for="productPrice">Ürün Fiyatı (TL):</label>
+				<input type="number" class="form-control" id="productPrice" name="productPrice" required>
+   		 	</div>
+            <div class="form-group">
+                <label for="productImage">Ürün Resmi:</label>
+                <input type="file" class="form-control-file" id="productImage" name="productImage" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Ürün Ekle</button>
+        </form>
+        
+        <form action="Admin.php" method="post">
+            <input type="hidden" name="action" value="delete">
+            <div class="form-group">
+                <label for="productId">Ürün ID:</label>
+                <input type="number" class="form-control" id="productId" name="productId" placeholder="Silinecek ürünün ID'sini giriniz" required>
+            </div>
+            <button type="submit" class="btn btn-danger">Ürün Sil</button>
+        </form>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

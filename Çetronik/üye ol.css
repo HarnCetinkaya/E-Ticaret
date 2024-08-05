@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+
+body {
+    font-family: Arial, sans-serif;
+	font-style: oblique;
+	
+}
+
+.navbar-brand {
+    font-size: 2em;
+    font-weight: bold;
+    color: #cc0000;
+}
+
+.form-control {
+    width: 300px;
+}
+
+.nav-link {
+    font-size: 1em;
+	
+}
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.login-container h2, .login-container p {
+    text-align: center;
+}
+
+.login-container form {
+    margin-top: 20px;
+}
+
+.btn-block {
+    margin-top: 10px;
+}
+
+
+.register-container h2, .register-container p {
+    text-align: center;
+}
+
+.register-container form {
+    margin-top: 20px;
+}
+
+.modal-content {
+    padding: 20px;
+}
+
+.external-login .btn {
+    margin-top: 10px;
+}
+

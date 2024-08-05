@@ -1,0 +1,67 @@
+@charset "utf-8";
+
+body {
+    font-family: Arial, sans-serif;
+	font-style: oblique;
+	
+}
+
+.navbar-brand {
+    font-size: 2em;
+    font-weight: bold;
+    color: #cc0000;
+}
+
+.form-control {
+    width: 300px;
+}
+
+.nav-link {
+    font-size: 1em;
+	
+}
+
+.nav-link {
+    font-size: 1em;
+}
+.footer {
+    background-color: #343a40; /* Gri arkaplan */
+    color: white;
+	margin-top: 275px;
+	
+}
+
+
+.footer h5 {
+    color: #fff;
+}
+
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container {
+    margin-top: 110px;
+}
+
+h1.display-4 {
+    font-size: 2.5rem; /* Responsive font size */
+    color: #cc0000; /* Başlık için özel renk */
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+img.img-fluid {
+    max-width: 100%; /* Resmin container'ına sığdırılması */
+    height: auto; /* Orantılı yükseklik */
+}
+

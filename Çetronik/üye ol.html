@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÜYE OL</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="üye ol.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="anasayfa.html">Çetronik</a>
+        <div class="navbar-nav ml-auto">
+            <a class="nav-item nav-link" href="login.html">Giriş Yap</a>
+            <a class="nav-item nav-link" href="#">Üye Ol</a>
+            <a class="nav-item nav-link" href="anasayfa.html">Anasayfa</a>
+            <a class="nav-item nav-link" href="Ürünler.php">Ürünler</a>
+            <a class="nav-item nav-link" href="Hakkımızda.html">Hakkımızda</a>
+            <a class="nav-item nav-link" href="Bize Ulaşın.html">İletişim</a>
+            <a class="nav-item nav-link" href="#">Sepetim</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="register-container">
+            <h2>Merhaba,</h2>
+            <p>Hesap oluştur, indirimleri kaçırma!</p>
+            <div class="tab-content">
+                <form id="registrationForm">
+                    <div class="form-group">
+                        <label for="email">E-Posta</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Şifre</label>
+                        <input type="password" class="form-control" id="password" name="password" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Hesap Oluştur</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+		<script>
+			
+			$(document).ready(function() {
+				
+				$('#registrationForm').submit(function(event) {
+					event.preventDefault(); 
+
+					
+					var formData = {
+						'email': $('input[name=email]').val(), // Email alanındaki değeri alır
+						'password': $('input[name=password]').val() // Şifre alanındaki değeri alır
+					};
+
+					
+					$.ajax({
+						type: 'POST', // İsteğin türü POST olarak ayarladık
+						url: 'üye ol.php', // İsteğin gönderileceği URL
+						data: formData, // Gönderilecek veri
+						dataType: 'text', // Beklenen yanıt türü
+						encode: true 
+					})
+					
+					.done(function(data) {
+						alert(data); 
+						if (data.includes("başarıyla")) { 
+							window.location.href = 'login.html'; 
+						}
+					});
+				});
+			});
+		</script>
+
+</body>
+</html>

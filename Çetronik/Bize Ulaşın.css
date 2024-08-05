@@ -1,0 +1,88 @@
+@charset "utf-8";
+
+body {
+    font-family: Arial, sans-serif;
+	font-style: oblique;
+	
+}
+
+.navbar-brand {
+    font-size: 2em;
+    font-weight: bold;
+    color: #cc0000;
+}
+
+.form-control {
+    width: 300px;
+}
+
+.nav-link {
+    font-size: 1em;
+	
+}
+
+.footer {
+    background-color: #343a40; /* Gri arkaplan */
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+	margin-top: 64px;
+}
+
+.footer h5 {
+    color: #fff; /* Başlık rengi */
+}
+
+.footer ul {
+    list-style: none; /* Liste işaretlerini kaldır */
+    padding-left: 0; /* Varsayılan padding'i kaldır */
+}
+
+.footer a {
+    color: #ccc; /* Link rengi */
+    text-decoration: none; /* Alt çizgiyi kaldır */
+}
+
+.footer a:hover {
+    color: #fff; /* Hover durumunda link rengi */
+}
+
+
+.contact-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contact-form h2 {
+    color: #333;
+}
+
+.contact-form p {
+    font-size: 16px;
+    color: #666;
+}
+
+.live-support, .return-address {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.live-support h3, .return-address h3 {
+    color: #333;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-link {
+    color: #007bff;
+}
+
+

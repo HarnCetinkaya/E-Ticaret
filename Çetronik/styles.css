@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+body {
+    font-family: Arial, sans-serif;
+    font-style: oblique;
+}
+
+.navbar-brand {
+    font-size: 2em;
+    font-weight: bold;
+    color: #cc0000;
+}
+
+.form-control {
+    width: 300px;
+}
+
+.nav-link {
+    font-size: 1em;
+}
+
+.footer h5 {
+    color: #fff;
+}
+
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-bottom: 20px; /* Kartlar arası boşluk */
+    height: 450px; /* Sabit yükseklik */
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+}
+
+.card-img-top {
+    width: 100%;
+    height: 240px; /* Sabit resim yüksekliği */
+    object-fit: cover; /* Resmi kaplayacak şekilde ayarla */
+}
+
+.card-body {
+    padding: 15px;
+    flex: 1; /* Kalan alanı doldur */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* İçerikleri eşit aralıklarla dağıt */
+}
+
+.card-title {
+    margin-bottom: 10px;
+}
+
+.card-text {
+    margin-bottom: 15px;
+    
+}
+
+.external-login .btn {
+    margin-top: 10px;
+}
